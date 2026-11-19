@@ -103,5 +103,6 @@
   "speed m/s",
   "yaw rate rad/s, positive left"
  ],
- "hz": 20
+ "hz": 20,
+ "window": 40
 }
