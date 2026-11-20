@@ -20,3 +20,12 @@ carried on for minutes, the memory went where training never took it, and the ca
   back) and 180 staged clips (a car stopped in the lane, a slow vehicle, the car ahead braking). Pictures where the expert brakes for a
   car the camera cannot show yet are not trained on. On the 6 drives v1 was checked on: −0.95 m/s² where the expert brakes at −1.51
   (v1: −0.78), no braking where it holds its speed (+0.04, as v1), 11 cm sideways at 3 s (v1: 11.4).
+- `v3/`: v2 rewired so that the memory never sees the speed (`model.json` arch `speed-head`: the speed goes in only where the plan is
+  made). v2 had learned to brake because the car was already slowing (in every training picture the expert had braked first), not
+  because of what it saw: with the speed held at 65 mph its braking on a stopped car went from −1.61 to −0.02 m/s². v3 brakes for what it
+  sees, but weakly. Brake test (80 braking runs, same for every model): 26 crashes (v1 31, v2 42); got back to 60 mph in 3 of 12.
+- `v4/`: v3 trained on the same data plus its own mistakes (DAgger): 300 staged clips and 20 drives in heavy, reckless traffic driven
+  by v3, with the expert saying what it should have done at every moment and taking over before a crash. Brake test: 18 crashes in 80
+  (cut-ins 2 of 52, the car ahead braking 5 of 12, slow vehicles 3 of 8; stopped cars still 8 of 8: it brakes hard but late), hardest
+  braking at 105% of the expert's; got back to 60 mph in 11 of 12. Drives of 3 minutes: holds 65 mph, 4 to 6 cm off the middle; crashes
+  in the heaviest traffic, as v1 does.
