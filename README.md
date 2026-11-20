@@ -29,3 +29,8 @@ carried on for minutes, the memory went where training never took it, and the ca
   (cut-ins 2 of 52, the car ahead braking 5 of 12, slow vehicles 3 of 8; stopped cars still 8 of 8: it brakes hard but late), hardest
   braking at 105% of the expert's; got back to 60 mph in 11 of 12. Drives of 3 minutes: holds 65 mph, 4 to 6 cm off the middle; crashes
   in the heaviest traffic, as v1 does.
+- `v5/`: v4 trained on its own mistakes too (DAgger round 2: 160 staged clips aimed at stopped cars, slow vehicles and braking cars,
+  and 10 drives in heavy traffic, all driven by v4) and on drives in the outer lanes (10 by the expert, 10 by v4): until then every long
+  drive was in the middle lane. Brake test: 18 crashes in 80, as v4 (stopped cars still 8 of 8); back to 60 mph in 11 of 12 (median 8 s,
+  v4 10). In the left lane 4 cm off the middle at 62 to 65 mph (v4 once crawled at 23 mph); 3-minute drives on worlds 0 and 1: 5 of 6
+  without a crash (v4 4).

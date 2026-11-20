@@ -1,0 +1,330 @@
+{
+ "name": "v5",
+ "arch": "speed-head",
+ "epoch": 3,
+ "metrics": {
+  "kind": "epoch",
+  "epoch": 3,
+  "step": 13155,
+  "train_loss": 0.04517692806668571,
+  "val_loss": 0.13147711605376158,
+  "side_1s_m": 0.01278542494628981,
+  "side_3s_m": 0.12505598050187555,
+  "ahead_3s_m": 2.3040887155913583,
+  "speed_3s_mph": 3.1281085021361625,
+  "side_1s_nudged_m": 0.031646822350857653,
+  "braking_mps2": [
+   -2.129,
+   -0.619
+  ],
+  "speeding_up_mps2": [
+   1.382,
+   0.884
+  ],
+  "holding_mps2": [
+   0.025,
+   -0.057
+  ],
+  "braking_held_mps2": [
+   -2.129,
+   -0.756
+  ],
+  "by_data": {
+   "data/runs": {
+    "val_loss": 0.06920902302586235,
+    "side_1s_m": 0.013954575291352545,
+    "side_3s_m": 0.1315660737602136,
+    "ahead_3s_m": 1.133288606824611,
+    "speed_3s_mph": 1.485018319249955,
+    "side_1s_nudged_m": 0.030202431849106377,
+    "braking_mps2": [
+     -1.514,
+     -0.553
+    ],
+    "speeding_up_mps2": [
+     1.187,
+     0.684
+    ],
+    "holding_mps2": [
+     0.031,
+     -0.022
+    ],
+    "braking_held_mps2": [
+     -1.514,
+     -0.684
+    ]
+   },
+   "data/runs-push": {
+    "val_loss": 0.12000057972386713,
+    "side_1s_m": 0.009789278473206537,
+    "side_3s_m": 0.10596923528812907,
+    "ahead_3s_m": 2.0620727105413486,
+    "speed_3s_mph": 2.726739381515212,
+    "side_1s_nudged_m": 0.030901861553256575,
+    "braking_mps2": [
+     -1.94,
+     -0.688
+    ],
+    "speeding_up_mps2": [
+     1.082,
+     1.186
+    ],
+    "holding_mps2": [
+     -0.007,
+     0.123
+    ],
+    "braking_held_mps2": [
+     -1.94,
+     -0.765
+    ]
+   },
+   "data/runs-staged": {
+    "val_loss": 0.16746238818836273,
+    "side_1s_m": 0.007015920945464383,
+    "side_3s_m": 0.106533243774157,
+    "ahead_3s_m": 3.1561881075669502,
+    "speed_3s_mph": 4.462597695173018,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -1.835,
+     -0.972
+    ],
+    "speeding_up_mps2": null,
+    "holding_mps2": [
+     -0.046,
+     -0.223
+    ],
+    "braking_held_mps2": [
+     -1.835,
+     -1.113
+    ]
+   },
+   "data/dagger-staged": {
+    "val_loss": 0.20555450577996068,
+    "side_1s_m": 0.015047609815003277,
+    "side_3s_m": 0.1227473318397963,
+    "ahead_3s_m": 3.5821414847544704,
+    "speed_3s_mph": 4.95701631916109,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -2.407,
+     -0.373
+    ],
+    "speeding_up_mps2": [
+     1.413,
+     0.901
+    ],
+    "holding_mps2": [
+     0.019,
+     -0.277
+    ],
+    "braking_held_mps2": [
+     -2.407,
+     -0.559
+    ]
+   },
+   "data/dagger-drives": {
+    "val_loss": 0.06232596379187372,
+    "side_1s_m": 0.01608319733429838,
+    "side_3s_m": 0.08212051762474908,
+    "ahead_3s_m": 1.0430913893381755,
+    "speed_3s_mph": 1.411407436140364,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -1.402,
+     -0.435
+    ],
+    "speeding_up_mps2": [
+     1.428,
+     1.269
+    ],
+    "holding_mps2": [
+     0.06,
+     -0.034
+    ],
+    "braking_held_mps2": [
+     -1.402,
+     -0.456
+    ]
+   },
+   "data/dagger2-staged": {
+    "val_loss": 0.30973995754958844,
+    "side_1s_m": 0.011252246806159815,
+    "side_3s_m": 0.17468825627573611,
+    "ahead_3s_m": 5.567630211802648,
+    "speed_3s_mph": 7.6626319067693105,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -2.489,
+     -0.436
+    ],
+    "speeding_up_mps2": [
+     1.259,
+     -0.096
+    ],
+    "holding_mps2": [
+     0.03,
+     -0.085
+    ],
+    "braking_held_mps2": [
+     -2.489,
+     -0.563
+    ]
+   },
+   "data/dagger2-drives": {
+    "val_loss": 0.11322069896592034,
+    "side_1s_m": 0.012731515963872274,
+    "side_3s_m": 0.16225373806776824,
+    "ahead_3s_m": 2.3158459048800997,
+    "speed_3s_mph": 2.976501100834918,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -2.467,
+     -0.771
+    ],
+    "speeding_up_mps2": [
+     1.207,
+     -0.018
+    ],
+    "holding_mps2": [
+     0.142,
+     -0.081
+    ],
+    "braking_held_mps2": [
+     -2.467,
+     -0.981
+    ]
+   },
+   "data/lanes-expert": {
+    "val_loss": 0.09294317894511753,
+    "side_1s_m": 0.021119622190793354,
+    "side_3s_m": 0.1869579279864276,
+    "ahead_3s_m": 1.5863125129982276,
+    "speed_3s_mph": 1.9600359656947988,
+    "side_1s_nudged_m": 0.04260574063362434,
+    "braking_mps2": [
+     -1.804,
+     -1.259
+    ],
+    "speeding_up_mps2": null,
+    "holding_mps2": [
+     0.034,
+     -0.246
+    ],
+    "braking_held_mps2": [
+     -1.804,
+     -1.359
+    ]
+   },
+   "data/lanes-dagger": {
+    "val_loss": 0.03360692597925663,
+    "side_1s_m": 0.0075541389209252815,
+    "side_3s_m": 0.09054845695142393,
+    "ahead_3s_m": 0.6345022837320964,
+    "speed_3s_mph": 0.8267014235042401,
+    "side_1s_nudged_m": null,
+    "braking_mps2": null,
+    "speeding_up_mps2": null,
+    "holding_mps2": [
+     0.044,
+     -0.017
+    ],
+    "braking_held_mps2": null
+   }
+  },
+  "secs": 9022.4
+ },
+ "physics": [
+  "3f5b0f00302e77d5",
+  "4c67a005bd0e7ab5",
+  "5962f749a607db03"
+ ],
+ "times": [
+  0.25,
+  0.5,
+  0.75,
+  1.0,
+  1.25,
+  1.5,
+  1.75,
+  2.0,
+  2.25,
+  2.5,
+  2.75,
+  3.0
+ ],
+ "hidden": 256,
+ "camera": "front_main",
+ "calibration": {
+  "name": "front_main",
+  "label": "Front main",
+  "width": 640,
+  "height": 360,
+  "hfov": 50,
+  "vfov": 29.39495760413827,
+  "fx": 686.2422145630587,
+  "fy": 686.2422145630587,
+  "cx": 320,
+  "cy": 180,
+  "K": [
+   [
+    686.2422145630587,
+    0,
+    320
+   ],
+   [
+    0,
+    686.2422145630587,
+    180
+   ],
+   [
+    0,
+    0,
+    1
+   ]
+  ],
+  "x": 0.21835938299454088,
+  "y": 0,
+  "z": 1.3499999999999999,
+  "yaw": 0,
+  "pitch": 0,
+  "roll": 0,
+  "camToVehicle": [
+   [
+    0,
+    0,
+    1,
+    0.21835938299454088
+   ],
+   [
+    -1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    -1,
+    0,
+    1.3499999999999999
+   ],
+   [
+    0,
+    0,
+    0,
+    1
+   ]
+  ]
+ },
+ "picture": {
+  "width": 256,
+  "height": 144,
+  "layout": "NCHW RGB 0..255, the whole 640x360 picture shrunk"
+ },
+ "sensors": [
+  "speed m/s",
+  "yaw rate rad/s, positive left"
+ ],
+ "hz": 20,
+ "window": 40
+}
