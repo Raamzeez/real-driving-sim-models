@@ -34,3 +34,8 @@ carried on for minutes, the memory went where training never took it, and the ca
   drive was in the middle lane. Brake test: 18 crashes in 80, as v4 (stopped cars still 8 of 8); back to 60 mph in 11 of 12 (median 8 s,
   v4 10). In the left lane 4 cm off the middle at 62 to 65 mph (v4 once crawled at 23 mph); 3-minute drives on worlds 0 and 1: 5 of 6
   without a crash (v4 4).
+- `v6/`: v5 with a second training answer: how far the car ahead is and how fast we close on it (a head that only training uses; the
+  files the game runs are the same shape as v5's). It learned the distance (15 to 30 m off at 50 to 200 m) but not the closing speed of
+  a car 100 to 200 m off (13 m/s off): in the 256x144 picture a sedan that far is a few pixels wide. It still does not brake for a
+  stopped car 70 to 150 m ahead (plans +0.5 m/s² where the expert brakes at −3.3); on the held-back drives it drives as v5 (11 to 13 cm
+  sideways at 3 s, a little quicker to speed up, braking a little softer). Brake test to come.
