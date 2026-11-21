@@ -44,3 +44,8 @@ carried on for minutes, the memory went where training never took it, and the ca
   it, against 5 in the whole picture. It did not fix stopped cars: the closing speed of a car 100 to 200 m off went from 13.0 to 12.2 m/s
   off, and it still plans no braking for a stopped car 70 to 150 m ahead (+0.6 to +0.8 m/s² where the expert brakes at −3.3). On the
   held-back drives it drives as v6. Twice the download of the others (vision.onnx 89 MB; no model.onnx). Brake test to come.
+- `v8/`: v7 whose zoomed view also sees the zoomed picture from 2 s before (`model.json` `zoom.before: 40`; vision.onnx takes `before`,
+  and the game keeps the last 41 zoomed views): one picture cannot show how fast a far car is closing, a car growing over 2 s can. But
+  trained with the driving it never learned to read it (closing speed 3.0 / 7.9 / 12.6 m/s off at 0-50 / 50-100 / 100-200 m, as v7),
+  and it still plans no braking for a stopped car 70 to 200 m ahead (+0.2 to +0.8 m/s² where the expert brakes at −2.3 to −3.2). On the
+  held-back drives it drives as v7. Brake test to come.
