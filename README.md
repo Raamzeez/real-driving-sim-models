@@ -39,3 +39,8 @@ carried on for minutes, the memory went where training never took it, and the ca
   a car 100 to 200 m off (13 m/s off): in the 256x144 picture a sedan that far is a few pixels wide. It still does not brake for a
   stopped car 70 to 150 m ahead (plans +0.5 m/s² where the expert brakes at −3.3); on the held-back drives it drives as v5 (11 to 13 cm
   sideways at 3 s, a little quicker to speed up, braking a little softer). Brake test to come.
+- `v7/`: v6 with a zoomed view: the middle 256x144 of the camera's 640x360 picture at its own detail (`model.json` `zoom`), read by a
+  second ResNet-18 that started as a copy of the first; the memory takes both views (`seen: 1024`). A car 100 m ahead is 13 pixels wide in
+  it, against 5 in the whole picture. It did not fix stopped cars: the closing speed of a car 100 to 200 m off went from 13.0 to 12.2 m/s
+  off, and it still plans no braking for a stopped car 70 to 150 m ahead (+0.6 to +0.8 m/s² where the expert brakes at −3.3). On the
+  held-back drives it drives as v6. Twice the download of the others (vision.onnx 89 MB; no model.onnx). Brake test to come.

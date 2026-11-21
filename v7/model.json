@@ -1,0 +1,412 @@
+{
+ "name": "v7",
+ "arch": "speed-head",
+ "epoch": 3,
+ "metrics": {
+  "kind": "epoch",
+  "epoch": 3,
+  "step": 13155,
+  "train_loss": 0.04899513444469279,
+  "val_loss": 0.16841577435053212,
+  "side_1s_m": 0.01256494586786487,
+  "side_3s_m": 0.1269300750971229,
+  "ahead_3s_m": 2.3044124986088064,
+  "speed_3s_mph": 3.153392593792899,
+  "side_1s_nudged_m": 0.03321271304122444,
+  "braking_mps2": [
+   -2.129,
+   -0.485
+  ],
+  "speeding_up_mps2": [
+   1.382,
+   0.996
+  ],
+  "holding_mps2": [
+   0.025,
+   -0.028
+  ],
+  "braking_held_mps2": [
+   -2.129,
+   -0.646
+  ],
+  "lead_err": {
+   "0-50 m": [
+    4.1,
+    2.99,
+    9994
+   ],
+   "50-100 m": [
+    14.5,
+    7.98,
+    4785
+   ],
+   "100-200 m": [
+    27.8,
+    12.2,
+    3346
+   ]
+  },
+  "by_data": {
+   "data/runs": {
+    "val_loss": 0.07087785927620219,
+    "side_1s_m": 0.013606778342320986,
+    "side_3s_m": 0.1263494667092802,
+    "ahead_3s_m": 1.1775362736622808,
+    "speed_3s_mph": 1.5535627664173346,
+    "side_1s_nudged_m": 0.03154620313753503,
+    "braking_mps2": [
+     -1.514,
+     -0.447
+    ],
+    "speeding_up_mps2": [
+     1.187,
+     0.75
+    ],
+    "holding_mps2": [
+     0.031,
+     -0.014
+    ],
+    "braking_held_mps2": [
+     -1.514,
+     -0.58
+    ],
+    "lead_err": null
+   },
+   "data/runs-push": {
+    "val_loss": 0.12186003340958046,
+    "side_1s_m": 0.01046609812623621,
+    "side_3s_m": 0.1115340210223955,
+    "ahead_3s_m": 2.0363256647017365,
+    "speed_3s_mph": 2.683789814292402,
+    "side_1s_nudged_m": 0.03128942633802826,
+    "braking_mps2": [
+     -1.94,
+     -0.595
+    ],
+    "speeding_up_mps2": [
+     1.082,
+     1.161
+    ],
+    "holding_mps2": [
+     -0.007,
+     0.176
+    ],
+    "braking_held_mps2": [
+     -1.94,
+     -0.679
+    ],
+    "lead_err": null
+   },
+   "data/runs-staged": {
+    "val_loss": 0.25261474610835566,
+    "side_1s_m": 0.007425161278259364,
+    "side_3s_m": 0.1165479372994046,
+    "ahead_3s_m": 3.3215656406587697,
+    "speed_3s_mph": 4.6976516746989585,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -1.835,
+     -0.798
+    ],
+    "speeding_up_mps2": null,
+    "holding_mps2": [
+     -0.046,
+     -0.114
+    ],
+    "braking_held_mps2": [
+     -1.835,
+     -0.986
+    ],
+    "lead_err": {
+     "0-50 m": [
+      3.7,
+      2.29,
+      3633
+     ],
+     "50-100 m": [
+      14.2,
+      6.11,
+      979
+     ],
+     "100-200 m": [
+      28.0,
+      10.93,
+      760
+     ]
+    }
+   },
+   "data/dagger-staged": {
+    "val_loss": 0.3051044371192945,
+    "side_1s_m": 0.014259507892655954,
+    "side_3s_m": 0.12853664187198402,
+    "ahead_3s_m": 3.497846887263805,
+    "speed_3s_mph": 4.905152612207174,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -2.407,
+     -0.182
+    ],
+    "speeding_up_mps2": [
+     1.413,
+     1.076
+    ],
+    "holding_mps2": [
+     0.019,
+     -0.231
+    ],
+    "braking_held_mps2": [
+     -2.407,
+     -0.396
+    ],
+    "lead_err": {
+     "0-50 m": [
+      3.8,
+      2.8,
+      3963
+     ],
+     "50-100 m": [
+      13.8,
+      7.53,
+      2950
+     ],
+     "100-200 m": [
+      28.3,
+      13.15,
+      1690
+     ]
+    }
+   },
+   "data/dagger-drives": {
+    "val_loss": 0.05718687607182397,
+    "side_1s_m": 0.014384326703018613,
+    "side_3s_m": 0.08486495371218081,
+    "ahead_3s_m": 0.9091056972079807,
+    "speed_3s_mph": 1.2372485623101408,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -1.402,
+     -0.353
+    ],
+    "speeding_up_mps2": [
+     1.428,
+     1.319
+    ],
+    "holding_mps2": [
+     0.06,
+     -0.003
+    ],
+    "braking_held_mps2": [
+     -1.402,
+     -0.373
+    ],
+    "lead_err": null
+   },
+   "data/dagger2-staged": {
+    "val_loss": 0.4214921782789219,
+    "side_1s_m": 0.01208432283142065,
+    "side_3s_m": 0.17932640455914278,
+    "ahead_3s_m": 5.568996985462977,
+    "speed_3s_mph": 7.707532270577492,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -2.489,
+     -0.351
+    ],
+    "speeding_up_mps2": [
+     1.259,
+     0.029
+    ],
+    "holding_mps2": [
+     0.03,
+     -0.075
+    ],
+    "braking_held_mps2": [
+     -2.489,
+     -0.489
+    ],
+    "lead_err": {
+     "0-50 m": [
+      5.4,
+      4.35,
+      2398
+     ],
+     "50-100 m": [
+      17.2,
+      11.66,
+      856
+     ],
+     "100-200 m": [
+      26.6,
+      11.47,
+      896
+     ]
+    }
+   },
+   "data/dagger2-drives": {
+    "val_loss": 0.11200740908583005,
+    "side_1s_m": 0.012353769960226836,
+    "side_3s_m": 0.1512091871544167,
+    "ahead_3s_m": 2.1937385262383353,
+    "speed_3s_mph": 2.833105434292166,
+    "side_1s_nudged_m": null,
+    "braking_mps2": [
+     -2.467,
+     -0.741
+    ],
+    "speeding_up_mps2": [
+     1.207,
+     -0.042
+    ],
+    "holding_mps2": [
+     0.142,
+     -0.057
+    ],
+    "braking_held_mps2": [
+     -2.467,
+     -0.985
+    ],
+    "lead_err": null
+   },
+   "data/lanes-expert": {
+    "val_loss": 0.09630829956796434,
+    "side_1s_m": 0.020919753798732052,
+    "side_3s_m": 0.19632546142295554,
+    "ahead_3s_m": 1.650809668081778,
+    "speed_3s_mph": 2.083602220617248,
+    "side_1s_nudged_m": 0.04700775976069489,
+    "braking_mps2": [
+     -1.804,
+     -1.289
+    ],
+    "speeding_up_mps2": null,
+    "holding_mps2": [
+     0.034,
+     -0.19
+    ],
+    "braking_held_mps2": [
+     -1.804,
+     -1.41
+    ],
+    "lead_err": null
+   },
+   "data/lanes-dagger": {
+    "val_loss": 0.03553505378464858,
+    "side_1s_m": 0.007235896664637106,
+    "side_3s_m": 0.08932473447587755,
+    "ahead_3s_m": 0.7086753364845558,
+    "speed_3s_mph": 1.0343179596188168,
+    "side_1s_nudged_m": null,
+    "braking_mps2": null,
+    "speeding_up_mps2": null,
+    "holding_mps2": [
+     0.044,
+     -0.037
+    ],
+    "braking_held_mps2": null,
+    "lead_err": null
+   }
+  },
+  "secs": 16710.9
+ },
+ "physics": [
+  "3f5b0f00302e77d5",
+  "4c67a005bd0e7ab5",
+  "5962f749a607db03"
+ ],
+ "times": [
+  0.25,
+  0.5,
+  0.75,
+  1.0,
+  1.25,
+  1.5,
+  1.75,
+  2.0,
+  2.25,
+  2.5,
+  2.75,
+  3.0
+ ],
+ "hidden": 256,
+ "camera": "front_main",
+ "calibration": {
+  "name": "front_main",
+  "label": "Front main",
+  "width": 640,
+  "height": 360,
+  "hfov": 50,
+  "vfov": 29.39495760413827,
+  "fx": 686.2422145630587,
+  "fy": 686.2422145630587,
+  "cx": 320,
+  "cy": 180,
+  "K": [
+   [
+    686.2422145630587,
+    0,
+    320
+   ],
+   [
+    0,
+    686.2422145630587,
+    180
+   ],
+   [
+    0,
+    0,
+    1
+   ]
+  ],
+  "x": 0.21835938299454088,
+  "y": 0,
+  "z": 1.3499999999999999,
+  "yaw": 0,
+  "pitch": 0,
+  "roll": 0,
+  "camToVehicle": [
+   [
+    0,
+    0,
+    1,
+    0.21835938299454088
+   ],
+   [
+    -1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    -1,
+    0,
+    1.3499999999999999
+   ],
+   [
+    0,
+    0,
+    0,
+    1
+   ]
+  ]
+ },
+ "picture": {
+  "width": 256,
+  "height": 144,
+  "layout": "NCHW RGB 0..255, the whole 640x360 picture shrunk"
+ },
+ "sensors": [
+  "speed m/s",
+  "yaw rate rad/s, positive left"
+ ],
+ "hz": 20,
+ "zoom": {
+  "x0": 192,
+  "y0": 108,
+  "width": 256,
+  "height": 144,
+  "layout": "NCHW RGB 0..255, that part of the camera's picture as it is"
+ },
+ "seen": 1024,
+ "window": 40
+}
