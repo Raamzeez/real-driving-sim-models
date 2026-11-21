@@ -49,3 +49,8 @@ carried on for minutes, the memory went where training never took it, and the ca
   trained with the driving it never learned to read it (closing speed 3.0 / 7.9 / 12.6 m/s off at 0-50 / 50-100 / 100-200 m, as v7),
   and it still plans no braking for a stopped car 70 to 200 m ahead (+0.2 to +0.8 m/s² where the expert brakes at −2.3 to −3.2). On the
   held-back drives it drives as v7. Brake test to come.
+- `v9/`: v8 whose zoomed view's ResNet was first taught on its own to judge the car ahead (distance and closing speed, from the zoomed
+  picture now and 2 s before; train/eyes.py), then put in and held as it is while the rest learned to drive with it. It reads the car
+  ahead best of any (closing speed 1.8 / 4.9 / 11.2 m/s off at 0-50 / 50-100 / 100-200 m, v8 3.0 / 7.9 / 12.6) and drives as v8 (12 cm
+  sideways at 3 s, speeds up as v8, no braking for nothing), but it still plans no braking for a stopped car 70 to 200 m ahead (+0.15 to
+  +0.48 m/s² where the expert brakes at −2.3 to −3.2; v8 up to +0.76). Brake test to come.
