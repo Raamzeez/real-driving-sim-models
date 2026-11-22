@@ -61,3 +61,13 @@ carried on for minutes, the memory went where training never took it, and the ca
   expert brakes at −2.3 / −2.9 / −3.2 and v9 plans +0.15 / +0.45 / +0.48), though far softer than the expert, and no braking for nothing
   beyond 200 m. On the held-back drives: 14 cm sideways at 3 s, braking −1.56 where the expert brakes at −2.49 (v9 softer), speeding up
   as v9. The weights of its second pass (the third did worse on the checking drives). Brake test to come.
+- `v11/`: v10's model and recipe, taught the expert of 2026-11-21 (brisker acceleration, keeping up with traffic, no braking for a
+  faster car cutting in, braking that builds as it closes in, braking for a stopped car it sees over the car ahead): its speed is learned
+  only from the drives recorded with that expert (4 new rounds: DAgger with v10 driving and the expert taking over late, hard stops,
+  sudden stops behind a car that swerves out), its steering from all of them. Three passes, from v10's weights; the last pass's weights.
+  Brake test (the game's eased pedals), against v10: it still runs into every stopped or suddenly stopping car (12 of 12, as v10), but
+  far slower (1 to 17 mph, 8 of 12 under 8; v10 6 to 29 mph), braking at up to −4.8 to −5.2 m/s² (v10 −3.3); it starts braking too late
+  for a car stopped far ahead (about 70 m in one, where the expert begins at 190 m). Back up to 60 mph in 6 to 10 s once the car ahead
+  changes out (v10 10 to 12), 11 to 16 s once it speeds away (v10 mostly never; the expert 7.6). Cut-ins: 4 of 51 crashes (v10 3 of 52),
+  the hardest (0.4 to 0.6 s ahead, 10 to 20 mph slower). No braking for nothing on an empty road (−0.2 m/s² at most, v10 −0.4); 3
+  drives of 3 minutes without a crash. On the held-back drives: braking −2.29 where the expert brakes at −3.04, speeding up 1.38 (2.08).
