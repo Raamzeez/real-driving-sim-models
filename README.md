@@ -54,3 +54,10 @@ carried on for minutes, the memory went where training never took it, and the ca
   ahead best of any (closing speed 1.8 / 4.9 / 11.2 m/s off at 0-50 / 50-100 / 100-200 m, v8 3.0 / 7.9 / 12.6) and drives as v8 (12 cm
   sideways at 3 s, speeds up as v8, no braking for nothing), but it still plans no braking for a stopped car 70 to 200 m ahead (+0.15 to
   +0.48 m/s² where the expert brakes at −2.3 to −3.2; v8 up to +0.76). Brake test to come.
+- `v10/`: v9's model and recipe (the zoomed view with the picture from 2 s before, its eyes held as eyes.py taught them) trained on
+  v9's data plus a new round of drives: stopped cars, wrecks turned 30 to 90°, queues of stopped and braking traffic, pull-aways, at night
+  and past bridges, and a later safety driver so the expert brakes hard close behind the car ahead. Data was the one change. It is the
+  first to plan braking for a stopped car 70 to 200 m ahead (−0.14 / −0.35 / −0.71 m/s² at 150-200 / 100-150 / 70-100 m, where the
+  expert brakes at −2.3 / −2.9 / −3.2 and v9 plans +0.15 / +0.45 / +0.48), though far softer than the expert, and no braking for nothing
+  beyond 200 m. On the held-back drives: 14 cm sideways at 3 s, braking −1.56 where the expert brakes at −2.49 (v9 softer), speeding up
+  as v9. The weights of its second pass (the third did worse on the checking drives). Brake test to come.
