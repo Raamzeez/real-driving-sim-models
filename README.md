@@ -66,8 +66,18 @@ carried on for minutes, the memory went where training never took it, and the ca
   only from the drives recorded with that expert (4 new rounds: DAgger with v10 driving and the expert taking over late, hard stops,
   sudden stops behind a car that swerves out), its steering from all of them. Three passes, from v10's weights; the last pass's weights.
   Brake test (the game's eased pedals), against v10: it still runs into every stopped or suddenly stopping car (12 of 12, as v10), but
-  far slower (1 to 17 mph, 8 of 12 under 8; v10 6 to 29 mph), braking at up to −4.8 to −5.2 m/s² (v10 −3.3); it starts braking too late
+  far slower (1 to 17 mph, 8 of 12 under 8; v10 6 to 29 mph; corrected 2026-11-23: those were read one picture after the hit, already
+  stopped by it; at the moment of the hit v11 was doing 11 to 61 mph), braking at up to −4.8 to −5.2 m/s² (v10 −3.3); it starts braking too late
   for a car stopped far ahead (about 70 m in one, where the expert begins at 190 m). Back up to 60 mph in 6 to 10 s once the car ahead
   changes out (v10 10 to 12), 11 to 16 s once it speeds away (v10 mostly never; the expert 7.6). Cut-ins: 4 of 51 crashes (v10 3 of 52),
   the hardest (0.4 to 0.6 s ahead, 10 to 20 mph slower). No braking for nothing on an empty road (−0.2 m/s² at most, v10 −0.4); 3
   drives of 3 minutes without a crash. On the held-back drives: braking −2.29 where the expert brakes at −3.04, speeding up 1.38 (2.08).
+- `v12/`: v11's model and recipe trained 2 more passes on everything v11 had plus 450 clips driven by v11 with the expert saying what it
+  should have done: a car stopped behind one that swerves out, the same clips with nobody behind it (hold your speed), and faster cars
+  cutting in 5 to 25 m ahead (hold your speed). It came from user flags of v11 braking for nothing. Brake test (112 runs, the same for
+  expert, v11, v12): 16 crashes (v11 17; the expert 0). When the car ahead swerves onto an empty lane at 65 mph it slows to 34 to 65 mph
+  (v11 27 to 59; the expert 57). Faster cut-ins 0 of 16 crashes, as v11, slowing to 45 to 65 mph (v11 43 to 65; the expert 62 to 65).
+  Other cut-ins 0 of 48 (v11 1). Worse: it still runs into every stopped or suddenly stopping car (12 of 12, as v11) and harder, at 8 to 61 mph
+  (median 41; v11 7 to 61, median 30), braking up to -5.2 m/s² but late. It also crashes into every car cutting in 0.6 s ahead at 20 mph slower
+  (4 of 4; v11 3). 3 drives of 3 minutes: 2 with no crash (4 cm off the middle); in the heaviest traffic at dusk it ran into the car ahead after 21 s
+  (v11 left its lane there after 34 s).
