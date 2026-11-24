@@ -81,3 +81,16 @@ carried on for minutes, the memory went where training never took it, and the ca
   (median 41; v11 7 to 61, median 30), braking up to -5.2 m/s² but late. It also crashes into every car cutting in 0.6 s ahead at 20 mph slower
   (4 of 4; v11 3). 3 drives of 3 minutes: 2 with no crash (4 cm off the middle); in the heaviest traffic at dusk it ran into the car ahead after 21 s
   (v11 left its lane there after 34 s).
+- `v12b/` and `v12c/` (experiments, 2026-11-23): v12 trained 1 more pass on v12's own data with two training changes, to see what
+  they do before v13's new recordings. Each training clip's pictures were made brighter or darker, flatter or harsher, and tinted, one
+  look per clip (v12 braked for stopped cars on clips it had trained on and not on new ones: it knew them by their look). Where the
+  expert brakes, planning too little braking within 1 s cost 3 times as much as too much. v12c's zoomed-view ResNet also learned;
+  v12b's was held as it was, as in v12. On held-out staged clips, its share of the expert's braking for a stopped car at 100-120 /
+  80-100 / 60-80 m: v12b 16 / 46 / 61%, v12c 39 / 52 / 77% (v12 13 / 29 / 51%); nothing yet past 120 m. Where the expert plans
+  harder than -6 m/s²: v12b -4.5, v12c -4.6 (v12 -3.9). Brake test (186 runs, also in the pickup and the sports car): 31 crashes
+  each (v12 35; the expert 0). Stopped cars still 11 of 12 (v12 12), braking from 61 m (v12b) and 78 m (v12c) away, the expert from
+  170 m. A car ahead braking to a stop from 45 mph: v12b 1 crash in 6, v12c 2 (v12 3); from 25 mph: v12b 4, v12c 5 (v12 3). Worse:
+  more braking for nothing: the car ahead swerving onto an empty lane at 65 mph, down to 22 to 24 mph on straight and right-hand
+  roads (v12 30 to 33; the expert 57), and hanging back at 28 to 34 mph behind a car pulling away to 50 (v12 36). Still about 40 cm
+  off the middle in the pickup (v12b 34 cm, v12c 43). 3 drives of 3 minutes each without a crash, including the heaviest traffic at
+  dusk where v12 crashed after 21 s.
