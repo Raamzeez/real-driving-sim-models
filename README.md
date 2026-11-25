@@ -94,3 +94,15 @@ carried on for minutes, the memory went where training never took it, and the ca
   roads (v12 30 to 33; the expert 57), and hanging back at 28 to 34 mph behind a car pulling away to 50 (v12 36). Still about 40 cm
   off the middle in the pickup (v12b 34 cm, v12c 43). 3 drives of 3 minutes each without a crash, including the heaviest traffic at
   dusk where v12 crashed after 21 s.
+- `v13-p1/` and `v13-p2/` (experiments, 2026-11-25): v12c trained 2 passes on v11-v12's recordings plus v13's (1,190 new: stopped and
+  braking traffic, a car cutting in or swerving out, drives in dense traffic, lane drives; v12c driving with the expert taking over once it
+  would brake harder than 3-4 m/s²; our car any of 5 body styles; 35% at dusk or night). Training changes: pictures varied (brightness,
+  contrast, tint, lens distortion, raindrops on the lens, blur, haze, grain); the plan's first second as hard as the braking the expert
+  would command right then; braking too little cost 1.5 times. p1 and p2 are the model after each pass. Held-out stopped-car clips,
+  share of the expert's braking at 120-150 / 100-120 / 80-100 m: p1 21 / 51 / 66%, p2 22 / 67 / 77% (v12c on the same clips 4 / 23 / 43%).
+  World 1, a highway no model trained on: p1 35 / 34 / 57%, p2 60 / 40 / 59% (v12c 1 / 1 / 22%); where the expert plans harder than
+  -6 m/s² there, p1 and p2 plan -3.5 (v12c -0.6). Brake test (186 runs): p1 19 crashes, p2 23 (v12c 30, the expert 0). Still into
+  11 of 12 stopped cars, from about 85 m (v12c 75, the expert 150-190), slower at the hit (27-38 mph, v12c 40). The car ahead braking hard
+  (6 m/s²) to a stop: p1 1 crash in 6, p2 5 (v12c 6); from 25 mph gently: p1 6, p2 5 (v12c 4). Pickup 5-7 cm off the middle
+  (v12c 48). More braking for nothing than v12c: a car ahead swerving out at 65 mph, down to 33 mph (v12c 44, the expert 57); p1 crawls
+  at 17-21 mph behind a car slowing to 45 or speeding away.
