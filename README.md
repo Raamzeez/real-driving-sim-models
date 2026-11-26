@@ -112,3 +112,10 @@ carried on for minutes, the memory went where training never took it, and the ca
   expert labelling, and the expert in stop-and-go jams (it now follows close and brakes gently at low speed). Braking too little no
   longer costs extra, and pictures where the expert slows for a car the camera can't show yet are left out. On recorded pictures after
   pass 1: far less braking where the expert holds speed, a little softer braking for stopped cars. Phantom-braking and brake tests to come.
+
+**2026-11-26: vision.onnx of v8 to v14-p2 replaced (same weights, fixed export).** From v8 on, the zoomed view's network starts with a
+convolution of 6 channels (the picture now and how it changed over 2 s). onnxruntime-web's WebGPU, which the game uses where the browser
+has it, worked that convolution out wrong, so in the game the zoomed view's numbers were not the trained model's: on the same pictures
+v14-p2's plans in the game matched its own only 0.2-0.4 (correlation), and it braked for nothing far more. The new files do the same sum
+as two 3-channel convolutions added together, which WebGPU gets right (checked: the same numbers on WebGPU, on the CPU and in PyTorch,
+for all 11 models). Every brake test and phantom test of v8 to v14 so far drove with the faulty view and has to be run again.
