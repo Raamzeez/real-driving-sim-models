@@ -106,3 +106,9 @@ carried on for minutes, the memory went where training never took it, and the ca
   (6 m/s²) to a stop: p1 1 crash in 6, p2 5 (v12c 6); from 25 mph gently: p1 6, p2 5 (v12c 4). Pickup 5-7 cm off the middle
   (v12c 48). More braking for nothing than v12c: a car ahead swerving out at 65 mph, down to 33 mph (v12c 44, the expert 57); p1 crawls
   at 17-21 mph behind a car slowing to 45 or speeding away.
+
+- `v14-p1/` and `v14-p2/` (experiments, 2026-11-26, published before their tests): v13-p2 trained 2 passes on v13's recordings plus
+  v14's: stopped cars with twins of the same scene where the car drives on at 55-80 mph or isn't there, v13-p2 in heavy traffic with the
+  expert labelling, and the expert in stop-and-go jams (it now follows close and brakes gently at low speed). Braking too little no
+  longer costs extra, and pictures where the expert slows for a car the camera can't show yet are left out. On recorded pictures after
+  pass 1: far less braking where the expert holds speed, a little softer braking for stopped cars. Phantom-braking and brake tests to come.
