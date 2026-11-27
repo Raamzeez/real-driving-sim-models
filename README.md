@@ -119,3 +119,8 @@ has it, worked that convolution out wrong, so in the game the zoomed view's numb
 v14-p2's plans in the game matched its own only 0.2-0.4 (correlation), and it braked for nothing far more. The new files do the same sum
 as two 3-channel convolutions added together, which WebGPU gets right (checked: the same numbers on WebGPU, on the CPU and in PyTorch,
 for all 11 models). Every brake test and phantom test of v8 to v14 so far drove with the faulty view and has to be run again.
+
+- `v15/` (experiment, 2026-11-27, published before its tests): v14-p2 retaught by a calmer expert (it gives no gas while closing on
+  a slower car, matches the speed of the car ahead more gently, and is loose about the exact gap), its old recordings relabelled to
+  that pace, plus its own mistakes in stop-and-go and cut-ins with a late safety driver. One fine-tuning pass of 4500 steps. The zoomed
+  view's first convolution is split for WebGPU (see the note above).
