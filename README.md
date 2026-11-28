@@ -126,3 +126,5 @@ for all 11 models). Every brake test and phantom test of v8 to v14 so far drove 
   view's first convolution is split for WebGPU (see the note above).
 
 - `v16a-p1/` (experiment, 2026-11-28, published before its tests): v15 fine-tuned 4500 steps with its zoomed view taken from the same camera through a lens twice as narrow (model.json zoom.tele = 2; the game films that view beside the usual one), world 4's drives (its 40 mph bend held out) and DAgger rounds of v15 on world 4's bends, in heavy traffic and on staged cut-ins, lane changes and stopped cars. Recordings without the narrow view gave the middle half of their zoomed view blown up.
+
+- `v16b-p1/` (experiment, 2026-11-28, published before its tests): v16a-p1 fine-tuned 4000 more steps on the same data with training clips that turn tighter than 500 m drawn 8 times as often (21% of what was drawn).
