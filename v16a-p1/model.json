@@ -1,0 +1,113 @@
+{
+ "name": "v16a-p1",
+ "arch": "speed-head",
+ "epoch": 1,
+ "metrics": null,
+ "physics": [
+  "20ce753dbbaf9667",
+  "2d46c97d8918728a",
+  "3742e2a6dadc3100",
+  "c1dabae235ade447",
+  "d7659ea1d1aead8e"
+ ],
+ "times": [
+  0.25,
+  0.5,
+  0.75,
+  1.0,
+  1.25,
+  1.5,
+  1.75,
+  2.0,
+  2.25,
+  2.5,
+  2.75,
+  3.0
+ ],
+ "hidden": 256,
+ "camera": "front_main",
+ "calibration": {
+  "name": "front_main",
+  "label": "Front main",
+  "width": 640,
+  "height": 360,
+  "hfov": 50,
+  "vfov": 29.39495760413827,
+  "fx": 686.2422145630587,
+  "fy": 686.2422145630587,
+  "cx": 320,
+  "cy": 180,
+  "K": [
+   [
+    686.2422145630587,
+    0,
+    320
+   ],
+   [
+    0,
+    686.2422145630587,
+    180
+   ],
+   [
+    0,
+    0,
+    1
+   ]
+  ],
+  "x": 0.21835938299454088,
+  "y": 0,
+  "z": 1.3499999999999999,
+  "yaw": 0,
+  "pitch": 0,
+  "roll": 0,
+  "camToVehicle": [
+   [
+    0,
+    0,
+    1,
+    0.21835938299454088
+   ],
+   [
+    -1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    -1,
+    0,
+    1.3499999999999999
+   ],
+   [
+    0,
+    0,
+    0,
+    1
+   ]
+  ]
+ },
+ "picture": {
+  "width": 256,
+  "height": 144,
+  "layout": "NCHW RGB 0..255, the whole 640x360 picture shrunk"
+ },
+ "sensors": [
+  "speed m/s",
+  "yaw rate rad/s, positive left"
+ ],
+ "hz": 20,
+ "zoom": {
+  "x0": 192,
+  "y0": 108,
+  "width": 256,
+  "height": 144,
+  "layout": "NCHW RGB 0..255, that part of the camera's picture as it is",
+  "tele": 2.0,
+  "tele_layout": "through a lens 2 times narrower (the camera's zoom), that part of its picture",
+  "before": 40,
+  "before_layout": "the zoomed picture from 40 pictures earlier (the first since a new drive, until there are that many)"
+ },
+ "seen": 1024,
+ "window": 40
+}

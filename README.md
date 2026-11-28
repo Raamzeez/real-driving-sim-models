@@ -124,3 +124,5 @@ for all 11 models). Every brake test and phantom test of v8 to v14 so far drove 
   a slower car, matches the speed of the car ahead more gently, and is loose about the exact gap), its old recordings relabelled to
   that pace, plus its own mistakes in stop-and-go and cut-ins with a late safety driver. One fine-tuning pass of 4500 steps. The zoomed
   view's first convolution is split for WebGPU (see the note above).
+
+- `v16a-p1/` (experiment, 2026-11-28, published before its tests): v15 fine-tuned 4500 steps with its zoomed view taken from the same camera through a lens twice as narrow (model.json zoom.tele = 2; the game films that view beside the usual one), world 4's drives (its 40 mph bend held out) and DAgger rounds of v15 on world 4's bends, in heavy traffic and on staged cut-ins, lane changes and stopped cars. Recordings without the narrow view gave the middle half of their zoomed view blown up.
